@@ -1,0 +1,33 @@
+@BasicCourse
+Feature: Verify the funtionality of Tatoc Basic Course
+	
+  Scenario: Verification of Basic course Link
+    Given Open the chrome and launch the browser
+    When Click on Basic Course Link
+    Then Open Basic Grid Gate page
+
+  #Scenario: Verification of GreenBox
+    When I click on greenbox
+    Then I am on Frame Dungeon page
+
+  #Scenario: Verification of Repaint Box 2
+    When I click on Repaint Box 2 and Proceed button
+    Then I am on Drag Around Page
+
+  #Scenario: Verification of Drag Me into Box
+    When I drag the dagrme to dragbox
+
+  #Scenario: Verification of Popup
+    Then I am on PopupWindows
+    When I click on Launch Popup Window
+    And I am on Popup Window
+    And I submit My name
+    And I click on submit button
+    Then I am back to Launch Popup Window
+    And I click on Proceed Button
+    Then I am on Cookie Handling Page
+
+  #Scenario: Verification of Cookie Handling
+    When I click on Generate Token
+    And I click on Proceed Button
+    Then I am on End Tatos Page
